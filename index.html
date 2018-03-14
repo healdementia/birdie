@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birdie on the Hunt</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    
+    <section class="svg">
+    
+        <svg class="svg__animation" id="birdy-is-hunting" xmlns="http://www.w3.org/2000/svg" width="500" height="300">
+          
+          <g id="sky">
+            <rect width="100%" height="100%" rx="20" ry="20" fill="#dffcf2" />
+          </g>
+          
+          <g id="small-cloud">
+            <circle r="20" cx="50" cy="60" fill="#ffffff" />
+            <circle r="30" cx="80" cy="50" fill="#ffffff" />
+            <circle r="24" cx="110" cy="56" fill="#ffffff" />
+          </g>
+          
+          <g id="big-cloud">
+            <circle r="32" cx="50" cy="232" fill="#ffffff" />
+            <circle r="44" cx="100" cy="220" fill="#ffffff" />
+            <circle r="30" cx="140" cy="234" fill="#ffffff" />
+          </g>
+          
+          <g id="tiny-cloud">
+            <circle r="10" cx="50" cy="120" fill="#ffffff" />
+            <circle r="20" cx="70" cy="110" fill="#ffffff" />
+            <circle r="14" cx="90" cy="116" fill="#ffffff" />
+            <circle r="10" cx="100" cy="120" fill="#ffffff" />
+          </g>
+          
+          <g id="birdy">
+            <circle r="40" cx="160" cy="110" fill="#f7e296" />
+            <circle r="30" cx="200" cy="100" fill="#f7e296" />
+            <circle r="6" cx="210" cy="100" fill="#444444" />
+            <polyline points="160,70 100,70 130,90" fill="#f7e296" stroke="none" />
+            <polyline points="130,85 110,85 130,120" fill="#f7e296" stroke="none" />
+            <polyline points="130,100 112,100 125,120" fill="#f7e296" stroke="none" />
+            <line id="top-beak" x1="230" y1="100" x2="238" y2="98" stroke="#444444" stroke-width="2" />
+            <line id="bottom-beak" x1="230" y1="100" x2="238" y2="102" stroke="#444444" stroke-width="2" />
+            <polyline id="wing" points="145,110 160,130 175,110" fill="none" stroke="#444444" stroke-width="2" stroke-linejoin="bevel" />
+            
+            <animate
+              xlink:href="#wing"
+              attributeName="points"
+              from="145,110 160,130 175,110"
+              to="145,110 160,90 175,110"
+              dur="0.3s"
+              repeatCount="indefinite"
+            />
+          </g>
+          
+          <g id="fly">
+            <circle r="6" cx="320" cy="100" fill="#444444" />
+            <circle r="4" cx="326" cy="100" fill="#444444" />
+            <polyline points="328,92 328,98 332,94" fill="none" stroke="#444444" stroke-width="1" />
+            <ellipse id="top-wing" rx="2" ry="4" cx="320" cy="92" fill="#ffffff" stroke="#444444" stroke-width="1" />
+            <ellipse id="bottom-wing" rx="2" ry="4" cx="320" cy="108" fill="#ffffff" stroke="#444444" stroke-width="1" />
+            <g id="fly-eyes">
+              <circle id="left-eye" r="2" cx="324" cy="100" fill="#ffffff" />
+              <circle id="left-eye-pupil" r="1" cx="323" cy="100" fill="#444444" />
+              <circle id="right-eye" r="2" cx="327" cy="100" fill="#ffffff" />
+              <circle id="right-eye-pupil" r="1" cx="326" cy="100" fill="#444444" />
+            </g>
+          </g>
+          
+        </svg>
+            
+    </section>
+    
+    <section class="footer">
+        
+        <p class="footer__copyright">made by <a class="footer__link" href="https://github.com/healdementia" aria-label="GitHub profile of the developer healdementia">@healdementia</a> with <3</p>
+        
+    </section>
+    
+  </body>
+  
+</html>
